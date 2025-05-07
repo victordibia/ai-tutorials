@@ -44,7 +44,7 @@ Next, we will create a Bing Search connection in the Azure AI Foundry portal. Th
 
 To create a Bing Search connection in the Azure AI Foundry portal, follow these steps:
 
-1. Verify that your project **Agent-Service-Workshop** is selected.
+1. Verify that your project is selected.
 1. From the sidebar menu, click the **Management Center** button. The button is pinned at the **bottom** of the sidebar.
 1. From the side-bar menu, select **Connected resources**.
 1. Click **+ New connection**.
