@@ -2,8 +2,8 @@
 
 The following resources will be created in the `rg-contoso-agent-workshop` resource group in your Azure subscription.
 
-- An **Azure AI Foundry hub** 
-- An **Azure AI Foundry project** 
+- An **Azure AI Foundry hub** named **agent-wksp**
+- An **Azure AI Foundry project** named **Agent Service Workshop**
 - A **Serverless (pay-as-you-go) GPT-4o model deployment** named **gpt-4o (Global 2024-08-06)**. See pricing details [here](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/).
 
 !!! Warning: You will need 140K TPM quota availability for the gpt-4o Global Standard SKU, not because the agent uses lots of tokens, but due to the frequency of calls made by the agent to the model. Review your quota availability in the [AI Foundry Management Center](https://ai.azure.com/managementCenter/quota)."
