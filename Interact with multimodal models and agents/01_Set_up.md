@@ -14,7 +14,7 @@ To complete the lab, you will need:
 
 In this workshop we will be working with Azure AI Foundry. First, deploy the necessary resources by following the steps below:
 
-1. Click the deploy to Azure button to deploy your resources: [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fazure-ai-foundry%2Fmultimodal-models%2Fmain%2F%2FWorkshop%20Instructions%2Fassets%2Flab324-template.json)
+1. Click the deploy to Azure button to deploy your resources: [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fazure-ai-foundry%2Fmultimodal-models%2Fmain%2F%2FInteract%20with%2Fmultimodal%2Fmodels%2Fand%2Fagents%2Fassets%2Flab324-template.json)
 
 2. In the newly opened tab, sign in to your Azure account.
 
