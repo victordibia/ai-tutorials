@@ -20,7 +20,7 @@ Here are some examples to try, but get creative with your own prompts and see wh
 ### Zero-shot learning and conversation history
 
 ```
-Suggest a tagline for a futuristic-themed pizzeria restaurant named "Galactic Slice"..
+Suggest a tagline for a futuristic-themed pizzeria restaurant named "Galactic Slice".
 ```
 
 Without clearing the chat history, try now the following prompt:

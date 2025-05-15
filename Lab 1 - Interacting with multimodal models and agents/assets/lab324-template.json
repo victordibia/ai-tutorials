@@ -421,7 +421,7 @@
         "name": "[concat(parameters('searchService_name'), '-', parameters('uniqueSuffix'))]",
         "location": "[parameters('location')]",
         "sku": {
-            "name": "standard"
+            "name": "free"
         },
         "properties": {
             "replicaCount": 1,
@@ -440,8 +440,7 @@
             "authOptions": {
                 "apiKeyOnly": {}
             },
-            "disabledDataExfiltrationOptions": [],
-            "semanticSearch": "free"
+            "disabledDataExfiltrationOptions": []
         }
       },
       {

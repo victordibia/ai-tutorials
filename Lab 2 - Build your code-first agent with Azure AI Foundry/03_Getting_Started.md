@@ -30,19 +30,19 @@ You need to authenticate with Azure so the agent app can access the Azure AI Age
     ```
 
     !!! note
-        You'll be prompted to open a browser link and log in to your Azure account. Be sure to copy the authentication code first.
+    You'll be prompted to open a browser link and log in to your Azure account. Be sure to copy the authentication code first.
 
-        1. A browser window will open automatically, select your account type and click **Next**.
-        2. Sign in with your Azure subscription **Username** and **Password**.
-        3. **Paste** the authentication code.
-        4. Select **OK**, then **Done**.
+    1. A browser window will open automatically, select your account type and click **Next**.
+    2. Sign in with your Azure subscription **Username** and **Password**.
+    3. **Paste** the authentication code.
+    4. Select **OK**, then **Done**.
 
     !!! warning
-        If you have multiple Azure tenants, then you will need to select the appropriate tenant when authenticating.
+    If you have multiple Azure tenants, then you will need to select the appropriate tenant when authenticating.
 
-        ```shell
+    ```shell
         az login --use-device-code --tenant <tenant_id>
-        ```
+    ```
 
 1. Next, select the appropriate subscription from the command line.
 1. Leave the terminal window open for the next steps.

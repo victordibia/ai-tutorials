@@ -24,13 +24,12 @@ cd infra && ./deploy.sh
 > chmod +x ./deploy.sh
 > ```
 
-The deploy script generates the **.env** file, which contains the project connection string, model deployment name, and Bing connection name.
+The deploy script generates the **.env** file, which contains the project connection string and model deployment name.
 
 Your **.env** file should look similar to this but with your project connection string.
 
 ```python
 MODEL_DEPLOYMENT_NAME="gpt-4o"
-BING_CONNECTION_NAME="groundingwithbingsearch"
 PROJECT_CONNECTION_STRING="<your_project_connection_string>"
 ```
 
@@ -69,8 +68,6 @@ Alternatively, if you prefer not to use the `deploy.sh` script you can deploy th
     - Model version: Select **2024-11-20**.
     - Tokens Per Minute Rate Limit: Select **140k**.
     - Select **Deploy**.
-
-### Workshop Configuration
 
 You'll need the project connection string to connect the agent app to the Azure AI Foundry project. You can find this string in the Azure AI Foundry portal in the Overview page for your Project `agent-workshop` (look in the Project details section).
 

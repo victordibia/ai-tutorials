@@ -18,20 +18,19 @@ This workshop demonstrated how to leverage the Azure AI Agent Service to create 
 
 - The agent can create downloadable files, including Excel, CSV, JSON, and image formats, providing users with flexible options to analyze and share data.
 
-## 5. Grounding with Bing
-
-- By integrating Bing search, the agent can perform grounded searches for competitive product analysis, expanding its insights beyond internal data sources.
-
-## 6. Security Best Practices
+## 5. Security Best Practices
 
 - Security risks, such as SQL injection, are mitigated by enforcing read-only database access and running the app within a secure environment.
 
-## 7. Multi-Language Support
+## 6. Multi-Language Support
 
 - The agent and LLM support multiple languages, offering an inclusive experience for users from diverse linguistic backgrounds.
 
-## 8. Adaptability and Customization
+## 7. Adaptability and Customization
 
 - The workshop emphasizes the flexibility of the Azure AI Agent Service, allowing you to adapt the agent for various use cases, such as customer support or competitive analysis, by modifying instructions and integrating additional tools.
+
+> !TIP
+> As a next step you might want to enable the *Grounding with Bing Search* functionality to the Contoso Sales Agent. Look at the steps in this [manual](https://microsoft.github.io/build-your-first-agent-with-azure-ai-agent-service-workshop/lab-4-bing_search/) to learn how to do that.
 
 This workshop equips you with the knowledge and tools to build and extend conversational agents tailored to your business needs, leveraging the full capabilities of the Azure AI Agent Service.

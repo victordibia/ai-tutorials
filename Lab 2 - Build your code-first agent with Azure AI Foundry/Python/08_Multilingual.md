@@ -23,83 +23,69 @@ First, we're going to rerun the previous lab so we can see how the Code Interpre
 
 Once the task is complete, the pie chart image will be saved in the **shared/files** subfolder. Review the visualization, and you'll see that the text is not rendered correctly. This is because the Code Interpreter doesn't have the necessary fonts to render non-Latin characters.
 
-![The image shows korean pie chart without Korean text](media/sales_by_region_2022_pie_chart_korean.png){width=75%}
+![The image shows korean pie chart without Korean text](media/sales_by_region_2022_pie_chart_korean.png)
 
 4. When you're done, type **exit** to clean up the agent resources and stop the app.
 
 ## Add Multilingual Font Support
 
-=== "Python"
+1. Open the `main.py`.
 
-    1. Open the `main.py`.
+2. Define a new instructions file for our agent: **uncomment** the following lines by removing the **"# "** characters
 
-    2. Define a new instructions file for our agent: **uncomment** the following lines by removing the **"# "** characters
+    ```python
+    INSTRUCTIONS_FILE = "instructions/code_interpreter_multilingual.txt"
 
-        ```python
-        INSTRUCTIONS_FILE = "instructions/code_interpreter_multilingual.txt"
+    font_file_info = await utilities.upload_file(project_client, utilities.shared_files_path / FONTS_ZIP)
+    code_interpreter.add_file(file_id=font_file_info.id)
+    ```
 
+    !!! warning
+        The lines to be uncommented are not adjacent. When removing the # character, ensure you also delete the space that follows it.
+
+3. Review the code in the `main.py` file.
+
+    After uncommenting, your code should look like this:
+
+    ```python
+    INSTRUCTIONS_FILE = "instructions/function_calling.txt"
+    INSTRUCTIONS_FILE = "instructions/file_search.txt"
+    INSTRUCTIONS_FILE = "instructions/code_interpreter.txt"
+    INSTRUCTIONS_FILE = "instructions/bing_grounding.txt"
+    INSTRUCTIONS_FILE = "instructions/code_interpreter_multilingual.txt"
+
+
+    async def add_agent_tools() -> None:
+        """Add tools for the agent."""
+        font_file_info = None
+
+        # Add the functions tool
+        toolset.add(functions)
+
+        # Add the code interpreter tool
+        code_interpreter = CodeInterpreterTool()
+        toolset.add(code_interpreter)
+
+        # Add the tents data sheet to a new vector data store
+        vector_store = await utilities.create_vector_store(
+            project_client,
+            files=[TENTS_DATA_SHEET_FILE],
+            vector_store_name="Contoso Product Information Vector Store",
+        )
+        file_search_tool = FileSearchTool(vector_store_ids=[vector_store.id])
+        toolset.add(file_search_tool)
+
+        # Add multilingual support to the code interpreter
         font_file_info = await utilities.upload_file(project_client, utilities.shared_files_path / FONTS_ZIP)
         code_interpreter.add_file(file_id=font_file_info.id)
-        ```
 
-        !!! warning
-            The lines to be uncommented are not adjacent. When removing the # character, ensure you also delete the space that follows it.
+        # Add the Bing grounding tool
+        bing_connection = await project_client.connections.get(connection_name=BING_CONNECTION_NAME)
+        bing_grounding = BingGroundingTool(connection_id=bing_connection.id)
+        toolset.add(bing_grounding)
 
-    3. Review the code in the `main.py` file.
-
-        After uncommenting, your code should look like this:
-
-        ```python
-        INSTRUCTIONS_FILE = "instructions/function_calling.txt"
-        INSTRUCTIONS_FILE = "instructions/file_search.txt"
-        INSTRUCTIONS_FILE = "instructions/code_interpreter.txt"
-        INSTRUCTIONS_FILE = "instructions/bing_grounding.txt"
-        INSTRUCTIONS_FILE = "instructions/code_interpreter_multilingual.txt"
-
-
-        async def add_agent_tools() -> None:
-            """Add tools for the agent."""
-            font_file_info = None
-
-            # Add the functions tool
-            toolset.add(functions)
-
-            # Add the code interpreter tool
-            code_interpreter = CodeInterpreterTool()
-            toolset.add(code_interpreter)
-
-            # Add the tents data sheet to a new vector data store
-            vector_store = await utilities.create_vector_store(
-                project_client,
-                files=[TENTS_DATA_SHEET_FILE],
-                vector_store_name="Contoso Product Information Vector Store",
-            )
-            file_search_tool = FileSearchTool(vector_store_ids=[vector_store.id])
-            toolset.add(file_search_tool)
-
-            # Add multilingual support to the code interpreter
-            font_file_info = await utilities.upload_file(project_client, utilities.shared_files_path / FONTS_ZIP)
-            code_interpreter.add_file(file_id=font_file_info.id)
-
-            # Add the Bing grounding tool
-            bing_connection = await project_client.connections.get(connection_name=BING_CONNECTION_NAME)
-            bing_grounding = BingGroundingTool(connection_id=bing_connection.id)
-            toolset.add(bing_grounding)
-
-            return font_file_info
-        ```
-
-=== "C#"
-
-    1. Open the `Program.cs` file.
-
-    2. **Update** the creation of the lab to use the `Lab2` class.
-
-        ``` csharp
-        await using Lab lab = new Lab5(projectClient, apiDeploymentName);
-        ```
-
-    3. Review the `Lab4.cs` class to see how the Code Interpreter is added to the Tools list.
+        return font_file_info
+    ```
 
 ## Review the Instructions
 
@@ -142,7 +128,7 @@ Try these questions:
 
     Once the task is complete, the pie chart image will be saved in the **shared/files** subfolder.
 
-    ![The image shows korean pie chart with Korean text](media/sales_by_region_pie_chart_korean_font.png){width=75%}
+    ![The image shows korean pie chart with Korean text](media/sales_by_region_pie_chart_korean_font.png)
 
 ## Debugging the Code Interpreter
 

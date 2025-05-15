@@ -5,7 +5,6 @@ The following resources will be created in the `rg-contoso-agent-workshop` resou
 - An **Azure AI Foundry hub** named **agent-wksp**
 - An **Azure AI Foundry project** named **Agent Service Workshop**
 - A **Serverless (pay-as-you-go) GPT-4o model deployment** named **gpt-4o (Global 2024-11-20)**. See pricing details [here](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/).
-- A **Grounding with Bing Search** resource. See the [documentation](https://learn.microsoft.com/azure/ai-services/agents/how-to/tools/bing-grounding) and [pricing](https://www.microsoft.com/en-us/bing/apis/grounding-pricing) for details.
 
 !!! Warning: You will need 140K TPM quota availability for the gpt-4o Global Standard SKU, not because the agent uses lots of tokens, but due to the frequency of calls made by the agent to the model. Review your quota availability in the [AI Foundry Management Center](https://ai.azure.com/managementCenter/quota)."
 
@@ -26,7 +25,7 @@ cd infra && ./deploy.sh
 > ```
 
 **Automated deployment**
-The deploy script generates the **.env** file, which contains the project connection string, model deployment name, and Bing connection name.
+The deploy script generates the **.env** file, which contains the project connection string and model deployment name.
 
 Your **.env** file should look similar to this but with your project connection string.
 

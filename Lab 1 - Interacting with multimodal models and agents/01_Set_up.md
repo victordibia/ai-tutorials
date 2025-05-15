@@ -7,8 +7,11 @@
 
 To complete the lab, you will need:
 
-- An Azure subscription - [Create one for free.](https://azure.microsoft.com/free/cognitive-services?WT.mc_id=aiml-132569-bethanycheum)
-- An Azure OpenAI resource with [GPT-4o-mini, GPT-4o-mini-realtime-preview, DALL-E 3 and o4-mini models available in a supported region.](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models#assistants-preview?WT.mc_id=aiml-132569-bethanycheum)
+- An Azure subscription - If you don't have one already, you can [create one for free.](https://azure.microsoft.com/free/cognitive-services?WT.mc_id=aiml-132569-bethanycheum)
+- An Azure OpenAI resource with [GPT-4o-mini, GPT-4o-mini-realtime-preview, DALL-E 3 and o4-mini models available in a supported region.](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models#assistants-preview?WT.mc_id=aiml-132569-bethanycheum) If you don't have one already, jump to the next paragraph to provision the required resources. 
+
+> ! NOTE
+> If you are running this lab as an event attendee in a guided workshop, pls check with the speaker if you should use an Azure sponsored subscription created for that lab. 
 
 ## Deploying your resources
 
