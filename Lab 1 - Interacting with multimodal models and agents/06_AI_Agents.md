@@ -40,22 +40,20 @@ When building and interacting with an AI Agent in the Foundry Portal - as you ar
 First thing first, download the data we are going to use to ground your agent's responses from [here](https://github.com/microsoft/aitour-interact-with-llms/tree/main/lab/Skillable%20Workshop%20Instructions/assets).
 
 Next, follow the steps below to create an customize your agent.
-1. Under _Build and customize_ on the left navigation bar, select **Agents.** In the page that just opened up, click on the down arrow to select your Azure OpenAI Service resource then select the **Let's go** button.
+1. Under _Build and customize_ on the left navigation bar, select **Agents.** In the page that just opened up, click on the down arrow to select **gpt-4o-mini** model. Then click **Next**.
 
-![screenshot to select Aure OpenAI Service Resource](Images/agents-aoai-select.jpeg)
+![screenshot to select Aure OpenAI Service Resource](Images/agents-aoai-select.png)
 
-2. In the **Deployments** section, ensure you select **gpt-4o-mini** model. Then click **Next**.
-
-3. A new Agent will be created for you. Click on it, to be able to configure its properties. In the **Deployments** section, ensure you select **gpt-4o-mini** model.
+2. A new Agent will be created for you. Click on it, to be able to configure its properties. In the **Deployments** section, ensure you select **gpt-4o-mini** model.
 
     >[!TIP] 
     > **Ensure that you chose the correct deployment**. It should say **gpt-4o-mini** along with its version. 
 
-4. Next, let's name our Agent. Type the following in the Agent Name textbox:
+3. Next, let's name our Agent. Type the following in the Agent Name textbox:
 
     ```Contoso Outdoor Sales Agent```
 
-5. Next, we can provide the Agent with a set of **instructions**. Similar to the *System Message* we saw in previous sections, it provides the Agent with goals to follow. Copy the following instructions into the Instructions textbox.
+4. Next, we can provide the Agent with a set of **instructions**. Similar to the *System Message* we saw in previous sections, it provides the Agent with goals to follow. Copy the following instructions into the Instructions textbox.
 
     ``` 
     You are a sales Agent for Contoso Outdoor. You are polite, professional, helpful and friendly.
@@ -72,15 +70,15 @@ Next, follow the steps below to create an customize your agent.
     >[!NOTE]
     >How many prompt engineering techniques from the previous sections are you able to identify in this prompt? For clues, check Part 2 of the workshop.
 
-4. Navigate to the **Actions** tab, and click **add.** 
+5. Navigate to the **Actions** tab, and click **add.** 
 
     ![Agent attach new file](Images/agents-actions.jpeg)
 
-5. A new tab where you will select **Code interpreter**.
+6. A new tab where you will select **Code interpreter**.
 
-6. On the next window, click on **select local files** and select the `Contoso_Sales_Revenue.csv` file on your Desktop.
+7. On the next window, click on **select local files** and select the `Contoso_Sales_Revenue.csv` file on your Desktop.
     ![Agents code interpreter](Images/aifoundry-codeinterpreter-upload-file.jpeg)
-7. Click on the **upload and add** button. You should now see the file under the *Code Interpreter* tool.
+8. Click on the **upload and add** button. You should now see the file under the *Code Interpreter* tool.
 
 The Agent is now ready for us to interact with it.
 
@@ -90,7 +88,7 @@ The Agent is now ready for us to interact with it.
 
 ![](Images/agents-try-in-playground.jpeg)
 
-2.  Let's begin by typing `help` in the chat box. You will notice this starts a New Thread. 
+2.  Let's begin by typing `help` in the prompt box. You will notice this starts a New Thread. 
 You will notice that we get a series of sample questions that we can test. Test one of the questions and see what the Agent replies!
 
 2. Next, let's try a specific query. Type the following:
