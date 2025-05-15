@@ -1,33 +1,15 @@
-# Project
+# 🔧 Welcome to Generative AI and Agents Tutorials
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+This repo includes a collection of tutorials to help you get started with building Generative AI applications using **Azure AI Foundry**.
+Each tutorial is designed to be self-contained and provides step-by-step instructions to guide you in the development process.
 
-As the maintainer of this project, please make a few updates:
+## What is Azure AI Foundry?
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+[Azure AI Foundry](https://learn.microsoft.com/azure/ai-foundry/what-is-azure-ai-foundry) is the ultimate platform for innovators to create generative AI solutions. It offers a comprehensive suite of Azure AI capabilities and tools to design, customize, and manage AI applications and agents. It's seamlessly integrated with the world's most loved developer tools, including GitHub, Visual Studio, and Copilot Studio. 
+It offers a low-code development experience via a [web portal](https://ai.azure.com) and a rich set of APIs and SDKs for advanced users. 
 
-## Contributing
+## Table of Contents
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+- [Lab 1 - Interacting with multimodal models and agents](./Lab%201%20-%20Interacting%20with%20multimodal%20models%20and%20agents/): in this lab, designed for devs getting started in their gen AI journey, you'll get hands-on experience with Azure AI Foundry by interacting with the latest multimodal models from the model catalog. Learn prompt engineering techniques to effectively generate text, sound, and images, and mitigate the risks of inaccurate or harmful responses. Create an LLM-powered agent via UI, to combine gen AI capabilities with data connectors and tools, enabling the agent to take actions on behalf of the user.
 
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## Trademarks
-
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
+- [Lab 2 - Build your code-first agent with Azure AI Foundry](./Lab%202%20-%20Build%20your%20code-first%20agent%20with%20Azure%20AI%20Foundry/): this hands-on lab equips AI developers to create a powerful LLM-based agent with the Azure AI Foundry Agent Service. This fully managed cloud service simplifies enterprise-ready and scalable AI agent development, by tackling the challenge of integrating with complex data sources and multimodal models. By going through this lab, attendees will learn how to develop and test an agentic AI able to answer sales-related queries, analyze data, generate visualizations, and integrate external data sources.
