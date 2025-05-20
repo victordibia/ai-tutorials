@@ -42,7 +42,7 @@ First thing first, download the data we are going to use to ground your agent's 
 Next, follow the steps below to create an customize your agent.
 1. Under _Build and customize_ on the left navigation bar, select **Agents.** In the page that just opened up, click on the down arrow to select **gpt-4o-mini** model. Then click **Next**.
 
-![screenshot to select Aure OpenAI Service Resource](Images/agents-aoai-select.png)
+![screenshot to select Aure OpenAI Service Resource](Images/agents-aoai-select.jpeg)
 
 2. A new Agent will be created for you. Click on it, to be able to configure its properties. In the **Deployments** section, ensure you select **gpt-4o-mini** model.
 

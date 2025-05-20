@@ -35,9 +35,15 @@ In this workshop we will be working with Azure AI Foundry. First, deploy the nec
 
 ![Azure AI Foundry logged in homepage](./Images/aifoundry-homepage.jpeg)
 
-1. To begin, locate the **Workshop AI Hub** in the list of recent projects at the top of the landing page. **Click on the project** with the hub to access its settings and resources.
+1.Start by clicking Sign In, you can find the sign in link in the top right of the window, and enter the your credentials when prompted for the login credentials. Now that we are logged in, we can start navigating around the platform.
 
-![Hub management tab](./Images/aifoundry-hub-navigation.jpeg)
+2.Next, let's take a look at the resources we will be working with. Type in https://ai.azure.com/AllResources at the navigation bar to visit the resources page.
+
+![AI Foundry Welcome](./Images/aifoundry-welcomepage.png)
+
+![AI Foundry All Resources](./Images/aifoundry-allresources.png)
+
+
 
 > [!NOTE]
  > If you used the [workshop template](./assets/lab324-template.json) to provision the resources, an AI project with its related assets has been already created for you, so you can focus on usage. Here's a list of resources that have been pre-provisioned in the workshop environment:
