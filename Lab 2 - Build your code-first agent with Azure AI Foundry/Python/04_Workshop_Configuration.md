@@ -33,6 +33,9 @@ MODEL_DEPLOYMENT_NAME="gpt-4o"
 PROJECT_CONNECTION_STRING="<your_project_connection_string>"
 ```
 
+> !WARNING
+> You might get the error *Bing Search registration FAILED*, which means that your subscription doesn't support the *Grounding with Bing Search* feature. Ignore this error, as you're not going to use this functionality in this lab.
+
 **Manual deployment**
 
 Alternatively, if you prefer not to use the `deploy.sh` script you can deploy the resources manually using the Azure AI Foundry portal as follows:
