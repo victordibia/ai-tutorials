@@ -158,7 +158,7 @@ How can I set up my TrailMaster X4 Tent?
 ```
 
 ```
-Would you recommend the Adventurer Pro Backpack for a beginner?
+Which backpack would you recommend for a beginner?
 ```
 
 > [!NOTE]
