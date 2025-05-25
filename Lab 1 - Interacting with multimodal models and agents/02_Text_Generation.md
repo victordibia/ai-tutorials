@@ -194,7 +194,7 @@ Generative AI enables amazing creative solutions, but must be implemented respon
 
 To mitigate the risk of a similar behaviour, we can add an extra layer of mitigation, by customizing the content filtering system. 
 
-1. Navigate to **Safety + security** tab and select **Blocklists**
+1. Navigate to **Guardrails + controls** tab and select **Blocklists**
    ![Create a blocklist](./Images/create-blocklist.png)
 2. Name it **profanitySlang** and select the suggested Azure OpenAI Service in the dropdown menu as the connection. Then click on **Create blocklist**.
 3. Once your blocklist is created, click on it and select **Add a new term**
@@ -209,6 +209,9 @@ To mitigate the risk of a similar behaviour, we can add an extra layer of mitiga
 9. Review and **Create content filter**.
 
 Navigate back to chat playground and repeat the question again. See the results and compare with the first one.
+
+ > !NOTE
+ > The expected behavior is getting an error message with 400 error code.
 
 ## Next Steps
 

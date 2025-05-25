@@ -29,14 +29,17 @@ Until now, we have interacted with LLMs using a single modality: inputting text 
 
 1. Navigate to the  **playgrounds** section and select **Try the Chat Playground**
 
->[!alert] Before you start, click on **Clear Chat** to avoid any context from previous interactions.
+>[!alert] Before you start, make sure you download the images from [house_multimodal folder](./Images/house_multimodal/) and [context folder](./Images/context/), that we are going to use later on.
+> Also, click on **Clear Chat** to avoid any context from previous interactions. 
 
-2. In the chat text box, click on the attachment icon to upload a local image.
+2. Ensure **gpt-4o-mini** is selected as the model in the **Deployment** pane.
+
+3. In the chat text box, click on the attachment icon to upload a local image.
 
 ![Uploading image as input](./Images/upload_image_icon.png)
 
-3. Select all the images from the ```house-multimodal``` folder on your desktop.
-4. Once you have uploaded the files, try these prompts to start interacting with the image:
+4. Select all the images from the ```house-multimodal``` folder you just downloaded, by selecting one by one.
+5. Once you have uploaded the files, try these prompts to start interacting with the image:
 
 ```
 Create a tagline and short description for this rental home advertisement.
@@ -52,16 +55,16 @@ Create a tagline and short description for this rental home advertisement.
 For this next demo, we have an obstructed image. Bounding boxes were purposefully added in the image to obscure the full context.
 
 1. _Clear the chat_ and in the chat text box, add the prompt: ``what is that?``
-2. Click on the attachment icon and go to Desktop folder and upload [context-001](./Images/context-001.png) image and send the prompt.
+2. Click on the attachment icon and go to context folder you just dowloaded and upload [context-001](./Images/context/context-001.png) image and send the prompt.
 
 
 > This demonstrates a classic computer vision challenge in optical character recognition: deciphering unclear, isolated words. Now, if I use gpt-4o-mini and ask, 'What is this?', it responds, 'The text is not clearly readable due to its handwritten style. It could be something like “Mark.”' Remarkably, it also notes, 'Some portions of the text appear to be blocked and cannot be read.'
 
-3. We will add a new image, go to Desktop folder and upload [context-002](./Images/context-002.png) image to our chat, with the prompt ```Extract all the texts from the image. Explain what you think this is.```
+3. We will add a new image, go to context folder you dowloaded and upload [context-002](./Images/context/context-002.png) image to our chat, with the prompt ```Extract all the texts from the image. Explain what you think this is.```
 
 > Revealing a bit more, it's still quite challenging to identify what it is. This time, the prompt is adjusted slightly to: 'Extract all the text from the image. Explain what you think this is.' gpt-4o-mini responded, 'This says "milk, steak" and appears to be a shopping list.' It also noted that the image is still partially obscured, which is quite interesting.
 
-4. We will add a new final image, go to Desktop folder and upload [context-003](./Images/demo-4-context-003.png) image to our chat, with the prompt: ```Extract all the texts from the image. Explain what you think this is.```
+4. We will add a new final image, go to context folder you dowloaded and upload [context-003](./Images/context/demo-4-context-003.png) image to our chat, with the prompt: ```Extract all the texts from the image. Explain what you think this is.```
 
 > Upon revealing the entire image, we see that gpt-4o-mini was correct—it is indeed a shopping list. It accurately identifies items like 'mayo' and 'organic bread.' Even more intriguing is its interpretation of the note at the bottom. It captures the subtle context, stating, 'The note on the beer item suggests a reminder or an emphasis on moderation or limiting the quantity.
 
@@ -69,9 +72,9 @@ For this next demo, we have an obstructed image. Bounding boxes were purposefull
 
 By integrating the **gpt-4o-min-realtime-preview** model, users can interact with the platform using voice commands, making the shopping experience more engaging and accessible.
 
-1. Navigate back to **Playgrounds** and select **try Audio playground** and set the deployment to **gpt-4o-min-realtime-preview**
+1. Navigate back to **Playgrounds** and select **Try Audio playground** and set the deployment to **gpt-4o-min-realtime-preview**
 
-2. Update the **model instructions box** with the following:
+2. Update the **model instructions box** with the following, and then click **Apply changes**.
 
     ```You are a pirate, and every response must be full of pirate lingo. ```
 
@@ -79,7 +82,7 @@ By integrating the **gpt-4o-min-realtime-preview** model, users can interact wit
 
 ![enable audio in AI Foundry](./Images/aifoundry-enable-audio.jpeg)
 
-4. Interact with the model by clicking on the **start listening** button, saying ``hello`` and ask the model a few facts.
+4. Interact with the model by clicking on the **start listening** button. Say "hello" to begin, and then ask the model a few questions. Click "Stop Listening" when you're done.
 
 5. Next, change the tone with the system message as follows and interact with the model again: 
 
