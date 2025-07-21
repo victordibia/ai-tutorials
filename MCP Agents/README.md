@@ -423,7 +423,13 @@ MCP's enhanced capabilities - resource notifications, elicitation/sampling, resu
 
 Ready to build your own agent2agent system? Follow these steps:
 
-### 1. Run the Demo
+### 1. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Run the Demo
 
 ```bash
 # Start the server with event store for resumption
